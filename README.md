@@ -8,6 +8,10 @@ You will need Node v 8.16.0 or highter
 
 In the project directory, you can run:
 
+### `yarn install`
+
+Do this first
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
