@@ -24,6 +24,7 @@ class App extends React.Component {
 								width,
 								left,
 								top,
+								background: `#${Math.floor(Math.random() * 16777215).toString(16)}`
 							}}
 						/>
 					))}
