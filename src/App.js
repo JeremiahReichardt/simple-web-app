@@ -14,7 +14,7 @@ class App extends React.Component {
 					<button onClick={this.createNewNode}>new block</button>
 				</div>
 				<div style={{ display: "flex" }}>
-					{this.state.blocks.map(({ id, height, width, left, top }) => (
+					{this.state.blocks.map(({ id, height, width, left, top, background }) => (
 						<div
 							key={id}
 							style={{
@@ -24,7 +24,7 @@ class App extends React.Component {
 								width,
 								left,
 								top,
-								background: `#${Math.floor(Math.random() * 16777215).toString(16)}`
+								background
 							}}
 						/>
 					))}
@@ -46,6 +46,7 @@ class App extends React.Component {
 			height: 100,
 			left: window.innerWidth / 2 - 50,
 			top: window.innerHeight / 2 - 50,
+			background: `#${Math.floor(Math.random() * 16777215).toString(16)}`
 		};
 		this.setState({
 			blocks: [...blocks, newBlock],
